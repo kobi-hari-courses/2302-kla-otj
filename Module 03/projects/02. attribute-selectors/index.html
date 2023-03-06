@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Attribute Selectors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form>
+        <div><label conditions="unique max(10) min(5)">Username</label></div>
+        <input type="text" hint="please enter username">
+        <div><label conditions="required unique min(5)">Password</label></div>
+        <input type="password" bla="1" hint="enter password">
+        <div><label conditions="required contains@">email</label></div>
+        <input type="email" hint="enter email">
+        <div><label annotations="red-green-blue">Username</label></div>
+        <input bla type="text">
+        <div><label conditions="contains-digit required">Password</label></div>
+        <input type="password" hint="enter digits please">
+        <div><label conditions="required-sometimes">email</label></div>
+        <input type="email" bla="2">
+    </form>
+
+    <div>
+        the price of the product is <span currency="nis">100</span>,
+        and the other product costs <span currency="usd">50</span>
+    </div>
+</body>
+
+</html>

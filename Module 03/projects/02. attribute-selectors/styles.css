@@ -1,0 +1,50 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* basic attribute selector */
+[bla] {
+    border: 1px solid red;
+}
+
+/* attribute value selector */
+[type="text"] {
+    background: pink;
+}
+
+/* attribute contains substring */
+[hint*="please"] {
+    background: yellow;
+}
+
+/* attribute begins with prefix */
+[hint^="please"] {
+    border-left: 10px solid lime;
+}
+
+/* attribute ends with postfix */ 
+[hint$="please"] {
+    border-right: 10px solid lime;
+}
+
+/* attribute as space seperated list conains value */
+[conditions~="required"]::before {
+    content: '*';
+    color: red;
+}
+
+[currency="nis"]::after {
+    content: 'nis';
+    color: blue;
+}
+
+[currency="usd"]::after {
+    content: '$';
+    color: blue;
+}
+
+/* the attr() function copies the value of the attribute to the property value */
+[annotations]::after {
+    content: attr(annotations);
+    color: brown;
+}
