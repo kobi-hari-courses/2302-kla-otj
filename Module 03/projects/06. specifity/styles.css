@@ -1,0 +1,50 @@
+#bla {
+
+}
+
+
+li#bla.a.b {
+
+}
+
+.a[type="text"][foo="bar"] {
+
+}
+
+.a.b {
+    color: purple;
+}
+
+.a {
+    color: red;
+}
+
+.b {
+    color: green;
+}
+
+
+* {
+
+}
+
+ul li {
+    color: brown;
+}
+
+
+li {
+    color: yellow;
+}
+
+
+/* 0 ids, 0 classes and attirbutes, 4 type */
+body > ul li + li {
+
+}
+
+li:first-child {
+    color: blue!important;
+
+}
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun With Combinators</title>
+    <link rel="stylesheet" href="./styles.css" nocache/>
+  </head>
+  <body>
+    <h1 class="ugly nice">Hello World</h1>
+    <h2>How to embed CSS In our web site</h2>
+    <ul>
+      <li 
+        style="
+          color: red;
+          font-family: 'Times New Roman', Times, serif;
+          border: 1px solid brown;
+        "
+      >
+        Inline - Discoureged
+      </li>
+      <li id="id154">Embeded in the Head section</li>
+    </ul>
+    <h2 class="ugly">Welcome to the Selectors Module</h2>
+    <p>In this module we will discuss the follwing:</p>
+    <ul>
+      <li class="nice">Simple Selectors</li>
+      <li>Attribute Selectors</li>
+      <li class="ugly">Combinators</li>
+    </ul>
+
+    <h2 class="nice">Simple Selectors</h2>
+    <h3>Type Selector (name selector)</h3>
+    <pre>
+        h3 - selects all elements of type <strong>h3</strong>
+    </pre>
+
+    <h3>Class Selectors</h3>
+    <pre>
+        .class-name - selects all elements that contain the class 'class-name'
+    </pre>
+
+    <h3>Id Selector</h3>
+    <pre>
+        #id-name - selects "all" (single) element with the id '#id-name'
+    </pre>
+
+    <h3>Universal Selector</h3>
+    <pre>
+        * - selects all the elements
+    </pre>
+
+    <h2>Combinators</h2>
+    <div class="shopping-list">
+      <ul class="outer-ul">
+        <li class="a d">Item 1</li>
+        <li class="b">Item 2</li>
+        <li class="a b">Item 3</li>
+        <li>Item 4</li>
+        <li>
+          Group 1
+          <ul class="inner-ul">
+            <li>Item 1 - 1</li>
+            <li class="a c">Item 1 - 2</li>
+            <li class="b a">Item 1 - 3</li>
+            <li class="b">Item 1 - 4</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <h3>Descendant Combinator</h3>
+    <pre>
+        parent child - Select all "child" elements that are descendant of "parent"
+    </pre>
+
+    <h3>Direct Child Combinator</h3>
+    <pre>
+        parent > child - Select all "child" elements that are <strong>Direct Child</strong> of "parent"
+    </pre>
+
+    <h3>The "And" Combinator</h3>
+    <pre>
+        .parent.child - select all elements with class "parent" and also class "child"
+    </pre>
+
+    <h3>General Sibling Selector</h3>
+    <pre>
+        a ~ b - select all b elements that are preceded by a
+    </pre>
+
+    <h3>Direct Sibling Selector</h3>
+    <pre>
+        a + b - select the first b that is placed immediately after a
+    </pre>
+
+    <div class="ex1">
+      <h1>Hello Exercise 1</h1>
+      <h2>Title 2</h2>
+      <h1 class="special">yet another main header</h1>
+      <h2>Yet another title 2</h2>
+      <p>This  is a paragraph</p>
+    </div>
+
+    <div class="form">
+      <label>Username</label>
+      <input class="error" type="text" value="john">
+      <label condition="uppercase">Username</label>
+      <input class="error" type="text" value="john">
+    </div>
+
+
+  </body>
+</html>

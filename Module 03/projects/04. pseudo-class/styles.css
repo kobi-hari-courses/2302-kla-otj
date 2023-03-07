@@ -1,0 +1,94 @@
+li {
+    transition: 1s;
+    transform-origin: center;
+}
+
+li:hover {
+    background-color: yellow;
+    transform: scale(1.2);
+}
+
+/* select only element that is "active" (which happens for activatble elements only, while
+they are clicked. Only a, and button and a few more */
+a:active {
+    font-style: italic;
+}
+
+a:visited {
+    color: green;
+}
+
+/* :focus applys only to focusable elements: button, input, textarea, select */
+input {
+    margin: 4px;
+    color: blue;
+    border: 0px transparent;
+    outline: 0px transparent;
+    border-bottom: 1px solid rgb(206, 206, 255);
+} 
+
+input:focus {
+    border-bottom: 1px solid blue;
+    background-color: rgb(206, 206, 255);
+}
+
+button {
+    margin: 4px;
+    background: transparent;
+    border: 0px transparent;    
+    padding: 4px;
+    outline: 2px solid transparent;
+}
+
+button:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+button:focus {
+    outline-color: blue;
+    background-color: yellow;
+}
+
+input:disabled {
+    border-bottom-style: dashed;
+}
+
+.hint {
+    opacity: 0;
+    transition: 1s;
+    display: inline-block;
+    transform: translate(-40px, 0px);
+}
+
+input:focus + .hint {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, tr {
+    border: 1px solid gray;
+}
+
+td:nth-child(3) {
+    color: green;
+    font-size: 1.3em;
+}
+
+
+/* n starts from 0, and you can enter any "n" related formula that 
+includes multiplication and addition */
+tr:nth-child(3n+5) {
+    background: rgb(231, 224, 224);
+}
+
+h2:nth-of-type(3) {
+    text-decoration: red underline;
+}
+
+.nth-of-type-demo .a:not(.b) {
+    border-left: 6px solid green;
+}

@@ -1,0 +1,38 @@
+.shopping-list {
+    background-color: lightblue;
+}
+
+/* 1. descendants combinator: sel1 sel2 */
+.shopping-list li {
+    text-decoration: red underline;
+}
+
+/* 2. direct child combinator sel1 > sel2 */
+.outer-ul > li {
+    border: 1px solid brown;
+}
+
+/* 3. and selector. sel1sel2 */
+.a.b {
+    color: lightgreen;
+}
+
+/* 4. or selector. sel1 , sel2 */
+.a, .b {
+    background-color: lightgray;
+}
+
+/* 5. following sibling selector. sel1 ~ sel2 */
+.c ~ li {
+    border-left: 3px solid magenta;
+}
+
+/* 6. one directly following sibling selector. sel1 + sel2 */
+.d + li {
+    border-right: 5px solid green;
+}
+
+label[condition="uppercase"] + input.error {
+    background-color: pink;
+}
+

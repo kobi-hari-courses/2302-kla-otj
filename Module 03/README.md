@@ -29,6 +29,8 @@
 * **Child** Combinator
 * **Adjacent** Combinator
 * **Sibling** Combinator
+* **And** Combinator
+* **Or** Combinator
 
 ## Pseudo Class Selectors
 * **:hover, :active, :visited** Selectors
