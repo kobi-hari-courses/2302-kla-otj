@@ -22,6 +22,8 @@
 * Border parts and sizing
 * Border Styles
 * Rounded Corners
+* Shadows
+* Border Images
   
 ## Margin Collapsing
 * Vertical Block elements collapse

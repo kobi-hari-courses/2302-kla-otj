@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem 4</title>
+        <style>
+            form {
+                border: 1px solid rgb(18, 24, 112);;
+                padding: 10px;
+                width: 200px;
+                background: rgb(211, 213, 240);
+                border-radius: 40px 0px 40px 0px;
+                border-width: 0px 1px 0px 4px;
+            }
+
+            .form-field {
+                margin: 10px;
+            }
+
+            label {
+                display: block;
+                font-size: 14px;
+                color: rgb(48, 56, 173);
+            }
+
+            label[required]::before {
+                content: '*';
+                color: red;
+                font-size: 16px;
+            }
+
+            button {
+                margin: 10px;
+            }
+
+            input {
+                height: 24px;
+                border: transparent;
+                background: rgba(255, 255, 255, 0.4);
+                border-bottom: 1px solid black;
+                outline: 0px;
+                padding-left: 10px;
+                color: blue;
+            }
+
+            input:focus {
+                background: rgba(255, 255, 255, 0.8);
+                border-color: blue;
+            }
+
+            button {
+                border: 4px double rgb(95, 101, 180);
+                border-radius: 10px;
+                background: transparent;
+                outline: transparent;
+            }
+
+            button:focus {
+                border-color: blue;
+            }
+
+            button:hover {
+                background: rgb(95, 101, 180);
+                color: white;                
+            }
+        </style>
+
+    </head>
+    <body>
+        <form validate>
+            <div class="form-field">
+                <label required>Username</label>
+                <input type="text">
+            </div>
+            <div class="form-field">
+                <label required>Password</label>
+                <input type="password">
+            </div>
+            <div class="form-field">
+                <label>Favorite Pet</label>
+                <input type="text">
+            </div>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>

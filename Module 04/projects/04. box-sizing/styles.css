@@ -1,0 +1,26 @@
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body {
+}
+
+.root {
+    background-color: lightpink;
+    width: 100%;
+    height: 100%;
+
+    padding: 20px;
+    border: 5px solid brown;
+    font-size: 3em;
+    font-weight: bold;
+    
+}

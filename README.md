@@ -8,3 +8,4 @@
 
 ## Exercises
 * [CSS Selectors](./Module%2003/exercises/README.md)
+* [CSS Box Model](./Module%2004/exercises/README.md)
