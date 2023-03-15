@@ -1,0 +1,91 @@
+html, body {
+    width: 100%;
+    height: 100%; 
+    max-height: 100%;
+    max-width: 100%;   
+}
+
+body {
+    display: grid;
+    position: relative;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+ }
+
+.child {
+    border: 1px solid black;
+    background: gray;
+    padding: 20px;
+    margin: 10px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.child:nth-child(4) {
+    min-height: 80px;
+    background-color: green;
+    flex-grow: 2;
+    flex-basis: 0px;
+}
+
+.child:nth-child(5) {
+    background: lime;
+    flex-grow: 1;
+    flex-basis: 0px;
+}
+
+.child:nth-child(6) {
+}
+
+.child:nth-child(7) {
+}
+
+.child:nth-child(8) {
+    background: red;
+    flex-basis: 200px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    flex-shrink: 2;
+}
+
+.child:nth-child(8)::before, .child:nth-child(8)::after {
+    content: '';
+    width: 20px;
+}
+
+
+.child:nth-child(10) {
+    background: pink;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.child:nth-child(10)::before, .child:nth-child(10)::after {
+    content: '';
+    width: 20px;
+}
