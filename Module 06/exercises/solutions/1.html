@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 7.1</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;            
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .toolbar {
+            background: lightpink; 
+        }
+
+        .footer {
+            background: lightgreen;
+        }
+
+        .sidebar {
+            background: lightyellow;
+        }
+
+        .main-area {
+            background: lightgray;
+        }
+
+        /* Start your solution here */
+        body {
+            display: grid;
+            grid-template-rows: 80px 1fr 80px;
+            grid-template-columns: 160px 1fr;
+            grid-template-areas: 
+                "toolbar toolbar toolbar"
+                "sidebar main main"
+                "footer footer footer";
+        }
+
+        .toolbar {
+            grid-area: toolbar;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .main-area {
+            grid-area: main;
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        Toolbar
+    </div>
+    <div class="footer">
+        Footer
+    </div>
+    <div class="sidebar">
+        Sidebar
+    </div>
+    <div class="main-area">
+        Main
+    </div>    
+</body>
+</html>

@@ -1,0 +1,49 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-auto-rows: 2fr;
+    grid-auto-columns: 1.5fr;
+    grid-auto-flow: row dense;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.grid-item:nth-child(3) {
+    grid-column: 1;
+    background-color: pink;
+}
+
+.grid-item:nth-child(4) {
+    grid-column: span 3;
+    background-color: lime;
+}
+
+.grid-item:nth-child(5) {
+    grid-column: 2;
+    background-color: teal;
+}
+
+
+
