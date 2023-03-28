@@ -1,0 +1,93 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    --scale: 1;
+}
+
+:root {
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+.header {
+    background: purple;
+    grid-area: he;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+/* */
+    padding: 0.25em;
+    font-size: clamp(1rem, 5vw, 2rem);
+    padding: clamp(5px, 4%, 50px);
+}
+
+.menu {
+    grid-area: me;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    background: rgb(62, 115, 212);
+    height: 40px;
+    margin: 4px;
+    width: clamp(30%, 200px, 80%);
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+.sidebar {
+    background: rgb(123, 158, 224);
+    grid-area: si;
+    height: 100px;
+}
+
+.footer {
+    background: rgb(65, 76, 97);
+    grid-area: fo;
+}
+
+.main {
+    grid-area: ma;
+    border: 1px solid lightgray;
+    margin: 4px;
+    border-radius: 20px;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: minmax(min-content, 1fr) 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 5px;
+    align-self: start;
+}
+
+.main .col {
+    background: lightskyblue;
+    font-size: calc(1.5rem * var(--scale));
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .col:last-child {
+    grid-column: -2;
+}
+
+@media only screen and (min-width: 400px) {
+    body {
+        --scale: 2;
+    }
+}
