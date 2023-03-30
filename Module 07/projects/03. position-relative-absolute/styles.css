@@ -1,0 +1,69 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+:root {
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    background-color: lightpink;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.float {
+    position: relative;
+    background-color: darkmagenta;
+    color: lightgray;
+    border: 1px solid red;
+    opacity: 0.5;
+    top: 5px;
+    left: 5px;
+}
+
+.container .item:nth-child(3) {
+    background-color: lightgreen;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+
+[remez] {
+    border-bottom: 2px dashed red;
+    position: relative;
+}
+
+[remez]::before {
+    content: attr(remez);
+    background-color: yellow;
+    position: absolute;
+    opacity: 0;
+    white-space: nowrap;
+    left: 0px;
+    padding: 4px;
+    border: 1px solid black;
+    font-size: 16px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    transition: 1s;
+    bottom: calc(100% + 5px);
+}
+
+[remez]:hover::before {
+    opacity: 0.9;
+}
