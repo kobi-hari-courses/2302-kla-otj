@@ -1,16 +1,19 @@
 # On the job training
 
-## Daily summaries
-* [01. Typescript](./Module%2001/README.md)
-* [02. Prototypes in Javascript](./Module%2002/README.md)
-* [03. CSS Selectors](./Module%2003/README.md)
-* [04. CSS Box Model](./Module%2004/README.md)
-* [05. CSS Flex Boxes](./Module%2005/README.md)
-* [06. CSS Grid](./Module%2006/README.md)
-* [07. Media Queries and Sizing functions](./Module%2007/README.md)
-* [08. CSS Variables](./Module%2008/README.md)
+## CSS
+* [01. CSS Selectors](./CSS/Module%2001/README.md)
+  * [Exercises](./CSS/Module%2001/exercises/README.md)
+* [02. CSS Box Model](./CSS/Module%2002/README.md)
+  * [Exercises](./CSS/Module%2002/exercises/README.md)
+* [03. CSS Flex Boxes](./CSS/Module%2003/README.md)
+  * [Exercises](./CSS/Module%2003/exercises/README.md)
+* [04. CSS Grid](./CSS/Module%2004/README.md)
+  * [Exercises](./CSS/Module%2004/exercises/README.md)
+* [05. Media Queries and Sizing functions](./CSS/Module%2005/README.md)
+  * [Exercises](./CSS/Module%2005/exercises/README.md)
+* [06. CSS Variables](./CSS/Module%2006/README.md)
+  * [Exercises](./CSS/Module%2006/exercises/README.md)
 
-## Exercises
-* [CSS Selectors](./Module%2003/exercises/README.md)
-* [CSS Box Model](./Module%2004/exercises/README.md)
-* 
+## Typescript
+* [01. Prototypes in Javascript](./Typescript/Module%2001/README.md)
+* [02. Welcome to Typescript]

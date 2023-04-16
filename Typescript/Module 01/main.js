@@ -17,6 +17,10 @@ function Person(first, last, age) {
 
 }
 
+function Dog() {
+
+}
+
 Person.prototype.log = function() {
     console.log('Person', this.first, this.last);
 }
@@ -33,6 +37,8 @@ var p1 = new Person('John', 'Smith', 42);
 var p2 = new Person('Jane', 'Cohen', 26);
 var m2 = max(10, 20);
 var m1 = new max(10, 20);
+var d1 = new Dog();
+
 
 max(20, 10);
 max.x = 10;
