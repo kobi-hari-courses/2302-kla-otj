@@ -12,8 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.4.0",
-    "mathjs": "^11.8.0"
   },
   "devDependencies": {
     "typescript": "^5.0.4"

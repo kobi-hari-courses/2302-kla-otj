@@ -1,19 +1,17 @@
 {
-  "name": "fun-with-ts",
+  "name": "ts-basic-types",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1", 
-    "build": "tsc ",
+    "build": "tsc",
     "start": "node bin/main"
 
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.4.0",
-    "mathjs": "^11.8.0"
   },
   "devDependencies": {
     "typescript": "^5.0.4"
