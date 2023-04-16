@@ -1,0 +1,82 @@
+@property --angle {
+    syntax: '<angle>';
+    inherits: true;
+    initial-value: 20deg;
+}
+
+@property --stop-2 {
+    syntax: '<color>';
+    inherits: true;
+    initial-value: blue;
+}
+
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 40px;
+}
+
+:root {
+    --h: 100;
+    --s: 50%;
+    --l: 50%;
+    --a: 0.5;
+
+    --spread: 5px;
+    --offset: 0;
+ 
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    transition: 1s;
+}
+
+.demo-1 {
+    background: hsl(var(--h) var(--s) var(--l) / var(--a));
+}
+
+.demo-1:hover {
+    --a: 1;
+    --h: 200;
+}
+
+.demo-2 {
+    background: lightskyblue;
+    box-shadow: var(--offset) var(--offset) 20px var(--spread) black;
+}
+
+.demo-2:hover {
+    --spread: 20px;
+    --offset: 20px;
+}
+
+.demo-3 {
+    --angle: 45deg;
+
+    --stop-1: white;
+    --stop-2: red;
+    --stop-3: white;
+
+    transition: --angle 1s, --stop-2 6s;
+    background: linear-gradient(var(--angle), var(--stop-1), var(--stop-2), var(--stop-3));
+}
+
+.demo-3:hover {
+    --angle: 90deg;
+    --stop-2: green;
+
+}

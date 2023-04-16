@@ -1,0 +1,59 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+.special {
+    --theme-hue: 120;
+}
+
+.fancy {
+    --theme-hue: 300;
+}
+
+body {
+    padding: 50px;
+    position: relative;
+}
+
+app-kobi {
+    --p-theme-hue: var(--theme-hue, 0);
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid hsl(var(--p-theme-hue), 80%, 30%);
+    margin: 20px;
+    color: hsl(var(--p-theme-hue), 100%, 20%);
+}
+
+app-kobi .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    padding: 4px;
+    background: hsl(var(--p-theme-hue), 27%, 50%);
+
+}
+
+app-kobi .content {
+    padding: 4px;
+    flex-grow: 1;
+    background: hsl(var(--p-theme-hue), 27%, 80%);
+}
+
+app-kobi .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    padding: 4px;
+    background: hsl(var(--p-theme-hue), 27%, 60%);
+}

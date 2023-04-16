@@ -1,0 +1,115 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --kobi: green;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.colors {
+    display: flex;
+    flex-direction: row;
+}
+
+.colors div::before {
+    font-size: 2.5em;
+
+}
+
+.colors div:nth-child(2n):before {
+}
+
+.colors div {
+    --hue: 240;
+    --saturation: 40%;
+    --lightness: 0%;
+    background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+    width: 100px;
+    height: 100px;
+    border: 1px solid hsl(305, 62%, 37%);
+    margin: 10px;
+    transition: 1s;
+    transform: translate(0px, 0px);
+
+
+    --bs-offset: 2px;
+    --bs-offset-x: var(--bs-offset);
+    --bs-offset-y: var(--bs-offset);
+    --bs-blur: calc(var(--bs-offset) * 1.5);
+    --bs-spread: 0px;
+    --bs-color: gray;
+    box-shadow: var(--bs-offset-x) var(--bs-offset-y) var(--bs-blur) var(--bs-spread) var(--bs-color);
+}
+
+.colors div:nth-child(1) {
+    --lightness: 40%;
+    --bs-offset: 1px;
+}
+
+.colors div:nth-child(2) {
+    --lightness: 45%;
+    --bs-offset: 3px;
+}
+
+.colors div:nth-child(3) {
+    --lightness: 50%;
+    --bs-offset: 5px;
+}
+
+.colors div:nth-child(4) {
+    --lightness: 55%;
+    --bs-offset: 7px;
+}
+
+.colors div:nth-child(5) {
+    --lightness: 60%;
+    --bs-offset: 9px;
+}
+
+.colors div:nth-child(6) {
+    --lightness: 65%;
+    --bs-offset: 11px;
+}
+
+.colors div:nth-child(7) {
+    --lightness: 70%;
+    --bs-offset: 13px;
+}
+
+.colors div:nth-child(8) {
+    --lightness: 75%;
+    --bs-offset: 15px;
+}
+
+.colors div:nth-child(9) {
+    --lightness: 80%;
+    --bs-offset: 17px;
+}
+
+.colors div:nth-child(10) {
+    --lightness: 85%;
+    --bs-offset: 19px;
+}
+
+.colors div:hover {
+    --lightness: 100%;
+    --bs-blur: 20px;
+}
