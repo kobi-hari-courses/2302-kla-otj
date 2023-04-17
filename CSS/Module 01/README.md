@@ -1,10 +1,14 @@
-# Module 3 - CSS Selectors
+# Module 1 - CSS Selectors
 
 ## Projects
 |     |     |
 | --- | --- |
-| [selectos](./projects/01.%20selectors/) | CSS Selectors in Depth | 
-
+| [1. selectors](./projects/01.%20selectors/) | CSS Selectors in Depth | 
+| [2. attribute selectors](./projects/02.%20attribute-selectors/) | various ways to use CSS Attribute selectors |
+| [3. combinators](./projects/03.%20combinators/) | Composing atomic selectors using combinators |
+| [4. pseudo class](./projects/04.%20pseudo-class/) | CSS Pseudo classes |
+| [5. pseudo elements](./projects/05.%20pseudo-element/) | CSS Pseudo elements |
+| [6. specifity](./projects/06.%20specifity/) | CSS Selectors specificy |
 
 ## Introduction to selectors
 * What is a selector?

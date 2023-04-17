@@ -16,4 +16,5 @@
 
 ## Typescript
 * [01. Prototypes in Javascript](./Typescript/Module%2001/README.md)
-* [02. Welcome to Typescript]
+* [02. Welcome to Typescript](./Typescript/Module%2002/)
+  * [Exercise](./Typescript/Module%2002/exercises/README.md)

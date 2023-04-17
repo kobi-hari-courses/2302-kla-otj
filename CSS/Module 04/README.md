@@ -1,4 +1,14 @@
-# Module 6 - CSS Grids
+# Module 4 - CSS Grids
+## Projects
+|     |     |
+| --- | --- |
+| [1. intro](./projects/01.%20intro/) | Introduction to CSS Grid | 
+| [2. grid-areas](./projects/02.%20grid-areas/) | Defining Templates, lines, areas in Grid |
+| [3. auto-placement](./projects/03.%20auto-placement/) | Controlling the grid Auto-Placement algorithm | 
+| [4. alignment](./projects/04.%20alignment/) | Controlling the Grid alignment properties |
+| [5. auto-fit](./projects/05.%20auto-fit/) | Using auto-fit, auto-fill, minmax and repeat |
+
+
 ## Introduction to Grid Layout
 * What is grid layout?
 * How to define elements as grid container and grid items

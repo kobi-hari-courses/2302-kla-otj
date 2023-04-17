@@ -1,6 +1,6 @@
-# Module 02 - Prototype in Javascript
+# Module 01 - Prototype in Javascript
 
-## Agenda
+## Javascript craziness
 * Javascript Objects
 * Javascript Functions
 * What is the `new` keyword
@@ -11,3 +11,4 @@
 * There are only 6 types for values
 * There no classes
 * There is no type safety
+

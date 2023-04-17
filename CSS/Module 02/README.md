@@ -1,6 +1,15 @@
-# Module 4 - The Box Model
+# Module 2 - The Box Model
+
+## Projects
+|     |     |
+| --- | --- |
+| [1. box-model](./projects/01.%20box-model/) | CSS Box Model | 
+| [2. displays](./projects/02.%20displays/) | The various CSS displays: block, inline, inline-block |
+| [3. borders](./projects/03.%20borders/) | Fun examples of things you can do with CSS borders |
+| [4. box-sizing](./projects/04.%20box-sizing/) | The box-sizing bug and how CSS 3 solves it |
+| [5. margin-collapsing](./projects/05.%20margin-collapsing/) | The margin collapsing "feature" and how to solve it |
+
 ## Box Model
-[<img src="./assets/Box Model.png" width="300">]
 * Content Width and Height
 * Padding
 * Border

@@ -1,4 +1,11 @@
-# Module 5 - Flex boxes
+# Module 3 - Flex boxes
+
+## Projects
+|     |     |
+| --- | --- |
+| [1. flex-boxes](./projects/01.%20flex/) | Deep dive into CSS Flex Boxes | 
+| [2. spacer](./projects/02.%20spacer/) | How to create seperator using Flex |
+
 ## Flex box Axes
 * Row, Column
 * Row-Reverse and Column-Reverse
